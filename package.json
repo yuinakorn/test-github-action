@@ -1,0 +1,19 @@
+{
+  "name": "gh-actions-demo",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "test": "vitest run --reporter=dot",
+    "build": "vite build",
+    "test:watch": "vitest",
+    "ci": "npm ci && npm run test",
+    "lint": "eslint .",
+    "typecheck": "tsc -v || echo 'no tsconfig yet'"
+  },
+  "devDependencies": {
+    "@types/node": "^24.3.0",
+    "eslint": "^9.34.0",
+    "typescript": "^5.9.2",
+    "vitest": "^2.0.0"
+  }
+}
